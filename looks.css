@@ -1,0 +1,85 @@
+
+body{
+    background-color: greenyellow;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#div1{
+    position: relative;
+    top: 12vmax;
+    transform:translateX(30%);
+    animation: car_moves;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+#div2{
+    position: absolute;
+    width: 200px;
+}
+
+#img2{
+    width: 45%;
+    height: 45%;
+    position: relative;
+    right: -110px;
+    top: -90px;
+    animation: wheel_moves;
+    animation-timing-function: ease;
+    animation-duration: 4.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+#img3{
+    width: 45%;
+    height: 45%;
+    position: relative;
+    left: 480px;
+    top: -90px;
+    animation: wheel_moves;
+    animation-timing-function: ease;
+    animation-duration: 4.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes car_moves{
+    from{
+        transform: translateX(-60%);
+    }
+    to{
+        transform: translateX(30%);
+    }
+}
+
+@keyframes wheel_moves{
+    100%{transform: rotate(360deg)}
+}
+
+/* this ass wheel picture took me almost 1 hour to find the good one and edit it so it can fit omg */
+
+.moving_car_js{
+    animation: car_moves2 !important;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes car_moves2{
+    100%{transform: translateX(10%);}
+}
+
+
+
+
+
+
+
+
+
