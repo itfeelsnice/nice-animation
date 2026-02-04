@@ -64,22 +64,104 @@ body{
 /* this ass wheel picture took me almost 1 hour to find the good one and edit it so it can fit omg */
 
 .moving_car_js{
-    animation: car_moves2 !important;
+    animation: car_moves2;
     animation-timing-function: linear;
     animation-duration: 4s;
     animation-delay: 0s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes car_moves2{
-    100%{transform: translateX(10%);}
+    100%{transform: translateX(100px)}
+}
+
+
+/* i am just tired i got school tomorow so i will end here at 6.48 03.02.2026 */
+
+
+/* i started to code at 8.13 04.02.2026 */
+
+#btn1{
+    position: absolute;
+    color: black;
+    background-color: rgb(139, 221, 16);
+    border-radius: 30px;
+    width: 12vmax;
+    height: 4vmax;
+    font-size: 40px;
+    bottom: -20%;
+    left: 60%;
+    animation: btn_move1;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#btn2{
+    position: absolute;
+    color: black;
+    background-color: rgb(139, 221, 16);
+    border-radius: 30px;
+    width: 12vmax;
+    height: 4vmax;
+    font-size: 40px;
+    bottom: -20%;
+    left: 45%;
+    animation: btn_move1;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#btn3{
+    position: absolute;
+    color: black;
+    background-color: rgb(139, 221, 16);
+    border-radius: 30px;
+    width: 12vmax;
+    height: 4vmax;
+    font-size: 40px;
+    bottom: -20%;
+    left: 30%;
+    animation: btn_move1;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 
 
+@keyframes btn_move1 {
+    from{
+        transform: translateY(1900%);
+    }to {
+        transform: translateY( -500%);
+    }
+}
 
+.rotate1{
+    /* transform: rotateZ(180deg);
+    transform: rotateY(180deg); */
+    animation: car_rotate3;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
 
-
+@keyframes car_rotate3{
+    100%{transform: rotateZ(180deg);
+        transform: rotateY(180deg);
+    }
+}
 
 
 
