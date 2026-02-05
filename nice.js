@@ -8,16 +8,29 @@ let img1 = document.querySelector("#img1");
 let img2 = document.querySelector("#img2");
 let img3 = document.querySelector("#img3");
 
+let transform = 30;
+
+let rotate1 = 0;
 
 btn1.addEventListener("click", () =>{
-    img1.classList.toggle("moving_car_js");
+    transform += 10;
+    rotate1 += 360;
+    div1.style.transform = `translateX(${transform}%)`; 
+    img3.style.transform = `rotate(${rotate1}deg)`;
+    img2.style.transform = `rotate(${rotate1}deg)`;
 });
 
 btn2.addEventListener("click", () =>{
     img1.classList.toggle("rotate1");
 });
 
-
+btn3.addEventListener("click", () =>{
+    transform -= 10;
+    rotate1 -= 360;
+    div1.style.transform = `translateX(${transform}%)`; 
+    img3.style.transform = `rotate(${rotate1}deg)`;
+    img2.style.transform = `rotate(${rotate1}deg)`;
+});
 
 
 

@@ -15,6 +15,8 @@ body{
     animation-duration: 4s;
     animation-delay: 0s;
     animation-iteration-count: 1;
+    transition: transform 1s linear;
+    /* so like i used the help of chatgpt a little so this transition line is used for like better car moving */
 }
 
 #div2{
@@ -33,6 +35,7 @@ body{
     animation-duration: 4.5s;
     animation-delay: 0s;
     animation-iteration-count: 1;
+    transition: transform 1s linear;
 }
 
 #img3{
@@ -46,6 +49,7 @@ body{
     animation-duration: 4.5s;
     animation-delay: 0s;
     animation-iteration-count: 1;
+    transition: transform 1s linear;
 }
 
 @keyframes car_moves{
@@ -57,25 +61,13 @@ body{
     }
 }
 
-@keyframes wheel_moves{
+@keyframes wheel_moves1{
     100%{transform: rotate(360deg)}
 }
 
-/* this ass wheel picture took me almost 1 hour to find the good one and edit it so it can fit omg */
-
-.moving_car_js{
-    animation: car_moves2;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+@keyframes wheel_moves{
+    100%{transform: rotate(360deg)}
 }
-
-@keyframes car_moves2{
-    100%{transform: translateX(100px)}
-}
-
 
 /* i am just tired i got school tomorow so i will end here at 6.48 03.02.2026 */
 
@@ -147,8 +139,6 @@ body{
 }
 
 .rotate1{
-    /* transform: rotateZ(180deg);
-    transform: rotateY(180deg); */
     animation: car_rotate3;
     animation-timing-function: linear;
     animation-duration: 4s;
@@ -162,6 +152,12 @@ body{
         transform: rotateY(180deg);
     }
 }
+
+/* ok so i will end up coding here at 9.50 i will continue tomorow i got more ideas one that i will add tomorow */
+
+
+
+/* i continued to code on 05.02.2026 at 4.56 */
 
 
 
