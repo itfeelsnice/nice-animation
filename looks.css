@@ -159,5 +159,33 @@ body{
 
 /* i continued to code on 05.02.2026 at 4.56 */
 
+/* i stopped to code at 7.01 */
+
+/* started to code at 8.32 on 06.02.2026 */
+
+
+#btn4{
+    position: absolute;
+    color: black;
+    background-color: rgb(139, 221, 16);
+    border-radius: 30px;
+    width: 12vmax;
+    height: 4vmax;
+    font-size: 40px;
+    left: 0.5vmax;
+    top: 0.5vmax;
+}
+
+#img4{
+    position: absolute;
+    left:46%;
+    bottom: 50%;
+}
+
+
+
+
+
+
 
 

@@ -7,6 +7,7 @@ let h1 = document.querySelector("#a");
 let img1 = document.querySelector("#img1");
 let img2 = document.querySelector("#img2");
 let img3 = document.querySelector("#img3");
+let btn4 = document.querySelector("#btn4");
 
 let transform = 30;
 
@@ -21,7 +22,8 @@ btn1.addEventListener("click", () =>{
 });
 
 btn2.addEventListener("click", () =>{
-    img1.classList.toggle("rotate1");
+    // img1.classList.toggle("rotate1");
+    div1.style.transform = `rotate(${rotate1}deg)`;
 });
 
 btn3.addEventListener("click", () =>{
@@ -32,6 +34,14 @@ btn3.addEventListener("click", () =>{
     img2.style.transform = `rotate(${rotate1}deg)`;
 });
 
+btn4.addEventListener("click", () =>{
+
+});
+
+
+
+// today i started to code at 8.28 i will not code that much because i dont have that much time but i will try in 10 minutes or 15
+// to make my idea with an image that will pop up i will not make today the car rotate good because i dont have the time
 
 
 
