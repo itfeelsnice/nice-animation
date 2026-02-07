@@ -141,7 +141,7 @@ body{
 .rotate1{
     animation: car_rotate3;
     animation-timing-function: linear;
-    animation-duration: 4s;
+    animation-duration: 0s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -178,9 +178,45 @@ body{
 
 #img4{
     position: absolute;
-    left:46%;
-    bottom: 50%;
+    left: 47%;
+    transition: transform 1s linear;
+    top: -50%;
 }
+
+.samsar1{
+    animation: samsar;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: transform 1s linear;
+}
+
+@keyframes samsar {
+    from{
+        transform: translateY(-100%) !important; 
+        position: absolute;
+        top: -100%;
+    }to {
+        position: absolute;
+        top: 30%;
+    }
+}
+
+
+
+/* my brother just dosent let me do this he wants to play with his ass friends omg */
+
+/* i will finish this tomorow */
+
+/* today is 07.02.2026 at 5.37 i started to code, today i want to finish this project */
+
+
+
+
+
+
 
 
 

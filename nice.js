@@ -8,22 +8,26 @@ let img1 = document.querySelector("#img1");
 let img2 = document.querySelector("#img2");
 let img3 = document.querySelector("#img3");
 let btn4 = document.querySelector("#btn4");
+let img4 = document.querySelector("#img4");
 
 let transform = 30;
+let transform1 = 0;
 
 let rotate1 = 0;
 
 btn1.addEventListener("click", () =>{
     transform += 10;
+    transform1 += 190;
     rotate1 += 360;
     div1.style.transform = `translateX(${transform}%)`; 
     img3.style.transform = `rotate(${rotate1}deg)`;
     img2.style.transform = `rotate(${rotate1}deg)`;
+    img4.style.transform = `translateX(${transform1}%)`; 
 });
 
 btn2.addEventListener("click", () =>{
-    // img1.classList.toggle("rotate1");
-    div1.style.transform = `rotate(${rotate1}deg)`;
+    img1.classList.toggle("rotate1");
+    // div1.style.transform = `rotate(${rotate1}deg)`;
 });
 
 btn3.addEventListener("click", () =>{
@@ -32,10 +36,13 @@ btn3.addEventListener("click", () =>{
     div1.style.transform = `translateX(${transform}%)`; 
     img3.style.transform = `rotate(${rotate1}deg)`;
     img2.style.transform = `rotate(${rotate1}deg)`;
+    transform1 -= 190;
+    img4.style.transform = `translateX(${transform1}%)`; 
 });
 
 btn4.addEventListener("click", () =>{
-
+    img4.classList.add("samsar1");
+    btn4.remove();
 });
 
 
