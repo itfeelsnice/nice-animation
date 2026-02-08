@@ -27,7 +27,6 @@ btn1.addEventListener("click", () =>{
 
 btn2.addEventListener("click", () =>{
     img1.classList.toggle("rotate1");
-    // div1.style.transform = `rotate(${rotate1}deg)`;
 });
 
 btn3.addEventListener("click", () =>{
@@ -36,7 +35,7 @@ btn3.addEventListener("click", () =>{
     div1.style.transform = `translateX(${transform}%)`; 
     img3.style.transform = `rotate(${rotate1}deg)`;
     img2.style.transform = `rotate(${rotate1}deg)`;
-    transform1 -= 190;
+    transform1 -= 189;
     img4.style.transform = `translateX(${transform1}%)`; 
 });
 
